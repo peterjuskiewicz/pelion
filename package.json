@@ -1,0 +1,27 @@
+{
+  "name": "pelion",
+  "version": "1.0.0",
+  "description": "technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterjuskiewicz/pelion.git"
+  },
+  "author": "peter juskiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterjuskiewicz/pelion/issues"
+  },
+  "homepage": "https://github.com/peterjuskiewicz/pelion#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
