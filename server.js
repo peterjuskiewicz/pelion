@@ -6,14 +6,7 @@ const generate = require("./controllers/generate");
 
 require("dotenv").config({ path: __dirname + "/.env" });
 
-let crypto;
-try {
-  crypto = require("crypto");
-} catch (err) {
-  console.log("crypto support is disabled!");
-}
 
-const secret = process.env["API_SECRET"];
 
 const app = express();
 

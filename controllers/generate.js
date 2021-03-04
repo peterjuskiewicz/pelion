@@ -1,5 +1,17 @@
+const { body, validationResult } = require("express-validator");
+
+let crypto;
+try {
+  crypto = require("crypto");
+} catch (err) {
+  console.log("crypto support is disabled!");
+}
+
+
 const generate = (req, res) => {
-  //TODO: Extract to controllers
+  const secret = process.env["API_SECRET"];
+
+  console.log(secret)
 
   const errors = validationResult(req);
   const name = req.body["fullName"];
@@ -7,7 +19,9 @@ const generate = (req, res) => {
 
   // TODO: Implement error handling
 
-  console.log(errors);
+  console.log('req', req);
+
+
 
   if (req.body["secret"] !== secret) {
     res.status(401);
