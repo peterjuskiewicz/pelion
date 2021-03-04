@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/peterjuskiewicz/pelion#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.10.0"
   },
